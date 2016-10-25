@@ -30,12 +30,12 @@ $white:            #fff;
 
 // Accent colors
 // -------------------------
-$blue:             	   	#2AB2E4;
-$blue-dark:             #3CAAD6;
+$blue:             	#005bbb;
+$blue-dark:             darken($blue, 5%);
 $green:                 #28B62C;
 $red:                   #FF4136;
-$yellow:                #FF851B;
-$orange:                #Ff7941;
+$yellow:                #ffd368;
+$orange:                #f4bf3e;
 $pink:                  #E671B8;
 $purple:                #9954BB;
 $variable:              #2AB2E4;
@@ -59,15 +59,18 @@ $page-bg:  		  		    $white;
 $body-color:    		    $gray-1;
 $text-color:    		    $gray-1;
 $text-color-strong:	    $white;
-$text-color-weak: 	    $gray-3;
+$text-color-weak: 	    $gray-1;
 $text-color-faint:      $gray-4;
 $text-color-emphasis: 	$dark-5;
 
 $text-shadow-strong: none;
 $text-shadow-faint: none;
 
+$font-family-sans-serif: "Arial", Helvetica, sans-serif;
+$headings-font-family: "Oswald", Helvetica, Arial, sans-serif;
+
 // gradients
-$brand-gradient: linear-gradient(to right, rgba(255,213,0,1.0) 0%, rgba(255,68,0,1.0) 99%, rgba(255,68,0,1.0) 100%);
+$brand-gradient: linear-gradient(to right, rgba(255,211,104,1.0) 0%, rgba(244,191,62,1.0) 99%, rgba(244,191,62,1.0) 100%);
 $page-gradient: linear-gradient(60deg, transparent 70%, darken($page-bg, 4%) 98%);
 
 // Links
@@ -230,22 +233,22 @@ $wellBackground:                  $gray-3;
 // -------------------------
 
 $navbarHeight:                    52px;
-$navbarBackgroundHighlight:       #f8f8f8;
-$navbarBackground:                #f8f8f8;
+$navbarBackgroundHighlight:       $blue;
+$navbarBackground:                $blue;
 $navbarBorder:                    1px solid $tight-form-border;
 
-$navbarText:                      #666;
-$navbarLinkColor:                 #666;
-$navbarLinkColorHover:            #333;
-$navbarLinkColorActive:           #555;
+$navbarText:                      $gray-5;
+$navbarLinkColor:                 $gray-5;
+$navbarLinkColorHover:            #fff;
+$navbarLinkColorActive:           #fff;
 $navbarLinkBackgroundHover:       transparent;
 $navbarLinkBackgroundActive:      darken($navbarBackground, 6.5%);
 $navbarDropdownShadow:            inset 0px 4px 7px -4px darken($body-bg, 20%);
 
 $navbarBrandColor:                $navbarLinkColor;
 
-$navbarButtonBackground:          lighten($navbarBackground, 3%);
-$navbarButtonBackgroundHighlight: lighten($navbarBackground, 5%);
+$navbarButtonBackground:          darken($navbarBackground, 5%);
+$navbarButtonBackgroundHighlight: $navbarBackground;
 
 
 // Pagination
